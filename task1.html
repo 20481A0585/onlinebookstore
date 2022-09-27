@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>task1</title>
+    <script type="text/javascript">
+      function color()
+      {
+        c = document.getElementByName("g").value;
+        if (c == RED)
+        {
+          document.body.style.backgroundColor = "red";
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    <form class="" action="" method="post" name="f1">
+      <h1><input type="radio" name="g"  onchecked = "color()">RED<br />
+         <input type="radio" name="g"  onchecked = "color()">BLUE <br>
+         <input type="radio" name="g"  onchecked = "color()">GREEN <br>
+         <input type="radio" name="g"  onchecked = "color()">YELLOW</h1>
+    </form>
+  </body>
+</html>

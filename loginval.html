@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Validation</title>
+    <script type="text/javascript">
+    function valid()
+    {
+      name = document.f1.usr.value;
+      psw = document.f1.psw.value;
+      if ((name == "" || name == "null")&& (psw == "" || psw == "null"))
+        {
+          alert("username and password should not be empty");
+          return false;
+        }
+
+        else if ( name == "" || name == "null")
+      {
+        alert("Username should not be empty");
+        return false;
+      }
+      else if (psw == "" || psw == "null")
+      {
+        alert("Password should not be empty");
+        return false;
+      }
+      else if (psw.length < 8)
+      {
+        alert("Password should be of length 8 or greater than 8");
+        return false;
+      }
+      else{
+        return true;
+      }
+
+    }
+
+    </script>
+  </head>
+  <body>
+    <center>
+      <h1 style="text-decoration: underline">LOGIN FORM</h1>
+        <form method="post" name = "f1" action = "success.html">
+          Username <input type="text" name = "usr" ><br>
+          Password <input type="password" name="psw" value="" ><br>
+          <input type="submit" name="" value="Submit" onclick = "return valid()">
+          <input type="reset" name="" value="Reset" >
+
+        </form>
+
+    </center>
+  </body>
+</html>
